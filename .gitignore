@@ -1,0 +1,28 @@
+# Virtual Environment
+venv/
+env/
+.venv/
+
+# Python caching
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE folders
+.vscode/
+.idea/
+
+# Streamlit secrets (critical to exclude)
+.streamlit/secrets.toml
+
+# Environment variables
+.env
+
+# Local data with sensitive information (optional)
+data/raw/*.pdf
+data/raw/*.docx
+data/results/
+
+# OS generated files
+.DS_Store
+Thumbs.db
