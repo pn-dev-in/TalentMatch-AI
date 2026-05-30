@@ -1,7 +1,6 @@
 # 📄 AI-Based Resume Screening & Job Matching System
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](YOUR_DEPLOYED_APP_LINK)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://ai-resume-screening-sym.streamlit.app/)
 
 ## 📌 Overview
 
