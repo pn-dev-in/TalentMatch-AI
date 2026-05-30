@@ -1,15 +1,3 @@
-import subprocess
-import sys
-
-# Download spaCy model if not present (for cloud deployment)
-try:
-    import spacy
-    spacy.load("en_core_web_sm")
-except:
-    subprocess.check_call([sys.executable, "-m", "spacy", "download", "en_core_web_sm"])
-    import spacy
-    spacy.load("en_core_web_sm")
-
 import streamlit as st
 import pandas as pd
 import os
@@ -18,6 +6,24 @@ import matplotlib.pyplot as plt
 import yaml
 import plotly.graph_objects as go
 from datetime import datetime
+
+# Import spacy normally (model will be installed via requirements.txt)
+import spacy
+import nltk
+
+# Download NLTK data (this is fine, uses user space)
+try:
+    nltk.data.find('tokenizers/punkt')
+except LookupError:
+    nltk.download('punkt')
+try:
+    nltk.data.find('corpora/stopwords')
+except LookupError:
+    nltk.download('stopwords')
+try:
+    nltk.data.find('corpora/wordnet')
+except LookupError:
+    nltk.download('wordnet')
 
 # Load config
 with open("config.yaml", "r") as f:

@@ -1,7 +1,14 @@
-"""
-Text Preprocessor for Resumes
-Windows-compatible, using NLTK and spaCy (optional fallback)
-"""
+# At the top of text_preprocessor.py
+import spacy
+
+# Load model (will be installed via requirements.txt)
+try:
+    nlp = spacy.load("en_core_web_sm")
+except OSError:
+    # Fallback: try to download (shouldn't happen if in requirements.txt)
+    import subprocess
+    subprocess.check_call(["python", "-m", "spacy", "download", "en_core_web_sm"])
+    nlp = spacy.load("en_core_web_sm")
 
 import re
 import nltk
