@@ -4,7 +4,8 @@
 
 ## 📌 Overview
 
-A production-level AI system that automatically screens and ranks resumes against a job description. It uses Natural Language Processing and Machine Learning to provide fair, fast, and data-driven candidate shortlisting.
+🚀 AI Resume Screening System built with Python, NLP, and Streamlit. A production-level AI system that automatically analyzes resumes, extracts relevant skills, compares candidates against job descriptions using TF-IDF and Cosine Similarity, and generates ATS-style matching scores to streamline recruitment and candidate shortlisting.
+
 
 <img width="1917" height="967" alt="image" src="https://github.com/user-attachments/assets/298dfb39-e1e8-499f-8702-c2749e872a0e" />
 
