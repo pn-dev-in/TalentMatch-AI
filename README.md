@@ -6,7 +6,8 @@
 
 A production-level AI system that automatically screens and ranks resumes against a job description. It uses Natural Language Processing and Machine Learning to provide fair, fast, and data-driven candidate shortlisting.
 
-[Add a screenshot of your app's main screen here]
+<img width="1917" height="967" alt="image" src="https://github.com/user-attachments/assets/298dfb39-e1e8-499f-8702-c2749e872a0e" />
+
 
 ## ✨ Key Features
 *   **🤖 Intelligent Matching**: Choose from **Baseline (TF-IDF)** , **Semantic (BERT+FAISS)** , or a **Hybrid** approach for superior results.
