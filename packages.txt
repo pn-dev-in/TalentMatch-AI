@@ -1,0 +1,3 @@
+# packages.txt – system dependencies for Linux environment
+build-essential
+python3-dev

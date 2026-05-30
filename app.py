@@ -1,7 +1,14 @@
-"""
-AI-Based Resume Screening System - Enhanced UI
-Run with: streamlit run app.py
-"""
+import subprocess
+import sys
+
+# Download spaCy model if not present (for cloud deployment)
+try:
+    import spacy
+    spacy.load("en_core_web_sm")
+except:
+    subprocess.check_call([sys.executable, "-m", "spacy", "download", "en_core_web_sm"])
+    import spacy
+    spacy.load("en_core_web_sm")
 
 import streamlit as st
 import pandas as pd
