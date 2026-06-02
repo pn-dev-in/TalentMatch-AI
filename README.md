@@ -1,6 +1,7 @@
 # 📄 AI-Based Resume Screening & Job Matching System
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://ai-resume-screening-sym.streamlit.app/)
+Live Demo
+Application: https://ai-resume-screening-sym.streamlit.app/
 
 ## 📌 Overview
 
