@@ -1,100 +1,401 @@
-# 📄 AI-Based Resume Screening & Job Matching System
+# TalentMatch AI 🚀
 
-Live Demo
-Application: https://ai-resume-screening-sym.streamlit.app/
+### Intelligent Resume Screening & Candidate Ranking Platform
 
-## 📌 Overview
+TalentMatch AI is an AI-powered recruitment intelligence platform that automates resume screening, candidate ranking, ATS scoring, skill extraction, and job matching using Natural Language Processing (NLP) and Machine Learning.
 
-🚀 AI Resume Screening System built with Python, NLP, and Streamlit. A production-level AI system that automatically analyzes resumes, extracts relevant skills, compares candidates against job descriptions using TF-IDF and Cosine Similarity, and generates ATS-style matching scores to streamline recruitment and candidate shortlisting.
+The system analyzes resumes against job descriptions, extracts relevant skills and qualifications, identifies missing competencies, and generates ATS-style scores to help recruiters make faster and more informed hiring decisions.
 
-
-<img width="1917" height="967" alt="image" src="https://github.com/user-attachments/assets/298dfb39-e1e8-499f-8702-c2749e872a0e" />
-
-
-## ✨ Key Features
-*   **🤖 Intelligent Matching**: Choose from **Baseline (TF-IDF)** , **Semantic (BERT+FAISS)** , or a **Hybrid** approach for superior results.
-*   **🔍 In-Depth Analysis**: Extracts skills, experience (NER), degrees, and job titles from resumes.
-*   **📈 ATS Score & Suggestions**: An ATS breakdown (Skills, Experience, Education, Completeness) plus actionable feedback for each candidate.
-*   **🖥️ Interactive Dashboard**: A clean, modern UI featuring skill-radar charts, batch missing-skill analysis, and persistent results.
-*   **📑 Export & Reports**: Download results as CSV or a formatted PDF report.
-*   **🔐 Mock Authentication**: Basic login to simulate a secure environment.
-
-## 🛠️ Built With
-*   **Frontend & Logic**: [Streamlit](https://streamlit.io/)
-*   **NLP & ML**: `sentence-transformers`, `spaCy`, `scikit-learn`, `FAISS`, `nltk`
-*   **Data Handling**: `PyPDF2`, `pdfplumber`, `python-docx`, `pandas`, `plotly`
-*   **Backend**: Python 3.9+
-
-## 🚀 Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine.
-
-### Prerequisites
-*   Python 3.9+
-*   `pip` package manager
-
-### Installation
-
-1.  **Clone the repository**
-    ```bash
-    git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
-    cd YOUR_REPO_NAME
-Set up a virtual environment
-
-bash
-# On Windows
-python -m venv venv
-.\venv\Scripts\activate
-
-# On macOS/Linux
-python3 -m venv venv
-source venv/bin/activate
-Install dependencies
-
-bash
-pip install -r requirements.txt
-Download required NLTK and spaCy data
-
-bash
-python -c "import nltk; nltk.download('punkt'); nltk.download('stopwords'); nltk.download('wordnet')"
-python -m spacy download en_core_web_sm
-Run the application
-
-bash
-streamlit run app.py
-Default Login
-Username: recruiter
-
-Password: screen2025
-
-📊 Using the Kaggle Dataset
-Download the 'Resume Dataset' from Kaggle using:
-
-bash
-pip install kaggle
-kaggle datasets download snehaanbhawal/resume-dataset
-unzip resume-dataset.zip -d data/kaggle_resumes/
-For full batch testing, a utility script is included:
-
-bash
-python utils/batch_test_kaggle.py
-🚢 Deployment
-The app is easily deployed on Streamlit Community Cloud or Hugging Face Spaces. Simply link your GitHub repository to the chosen platform.
-
-🤝 Contributing
-Contributions are what make the open-source community an amazing place to learn. Any contributions you make are greatly appreciated.
-
-📝 License
-Distributed under the MIT License. See LICENSE for more information.
-
-text
+Designed as a modern hiring assistant, TalentMatch AI combines traditional information retrieval techniques with semantic AI models to deliver accurate candidate-job matching at scale.
 
 ---
 
-### 📝 Final Polish for a Perfect Project
+## 🌐 Live Demo
 
-1.  **Replace Placeholders**: Before the final push, replace `YOUR_DEPLOYED_APP_LINK` and `YOUR_USERNAME` in the `README.md` with your actual values.
-2.  **Add a LICENSE File**: (Optional but recommended) Make your project open-source by creating a simple `LICENSE` file with the MIT license text.
-3.  **Final Review**: Go through your checklist to make sure everything is in order.
+**Application:**
 
-Let me know if you'd like to adjust the README, or if you run into any issues during the deployment process.
+https://ai-resume-screening-sym.streamlit.app/
+
+---
+
+# ✨ Features
+
+### 🤖 Intelligent Candidate Matching
+
+Choose between multiple matching approaches:
+
+* TF-IDF Similarity Matching
+* BERT Semantic Matching
+* Hybrid Ranking System
+
+### 📄 Resume Parsing
+
+Supports:
+
+* PDF Resumes
+* DOCX Resumes
+
+Automatically extracts:
+
+* Skills
+* Experience
+* Education
+* Degrees
+* Job Titles
+
+### 📊 ATS Scoring Engine
+
+Generates detailed ATS-style scores based on:
+
+* Skill Match
+* Experience Match
+* Education Relevance
+* Resume Completeness
+
+### 🔍 Skill Gap Analysis
+
+Identifies:
+
+* Missing Skills
+* Recommended Skills
+* Job Fit Improvements
+
+### 📈 Interactive Analytics Dashboard
+
+Provides:
+
+* Candidate Rankings
+* ATS Score Breakdown
+* Skill Distribution Analysis
+* Missing Skill Insights
+
+### 📑 Export Reports
+
+Download:
+
+* CSV Results
+* Candidate Reports
+* ATS Analysis Summaries
+
+### 🔐 User Authentication
+
+* Login System
+* Recruiter Dashboard Access
+
+---
+
+# 🏗️ System Architecture
+
+```text
+Resume Upload
+      │
+      ▼
+Document Parsing
+(PDF / DOCX)
+      │
+      ▼
+Text Extraction
+      │
+      ▼
+NLP Processing
+      │
+      ├─────────────► Skill Extraction
+      │
+      ├─────────────► Experience Detection
+      │
+      ├─────────────► Education Analysis
+      │
+      ▼
+Candidate Representation
+      │
+      ▼
+TF-IDF / BERT Embeddings
+      │
+      ▼
+Similarity Matching Engine
+      │
+      ▼
+ATS Scoring Engine
+      │
+      ▼
+Candidate Ranking Dashboard
+```
+
+---
+
+# 🎯 Key Capabilities
+
+✅ Resume Screening Automation
+
+✅ Candidate Ranking
+
+✅ ATS Compatibility Scoring
+
+✅ Semantic Resume Matching
+
+✅ Skill Gap Analysis
+
+✅ Batch Resume Processing
+
+✅ PDF & DOCX Support
+
+✅ Exportable Reports
+
+---
+
+# 🛠️ Technology Stack
+
+## Frontend
+
+* Streamlit
+* Plotly
+
+## Backend
+
+* Python 3.9+
+
+## Natural Language Processing
+
+* spaCy
+* NLTK
+* Sentence Transformers
+
+## Machine Learning
+
+* Scikit-Learn
+* TF-IDF Vectorization
+* Cosine Similarity
+
+## Semantic Search
+
+* BERT Embeddings
+* FAISS Vector Database
+
+## Document Processing
+
+* PyPDF2
+* pdfplumber
+* python-docx
+
+## Data Processing
+
+* Pandas
+* NumPy
+
+---
+
+# 📂 Project Structure
+
+```text
+TalentMatch-AI/
+
+├── app.py
+├── requirements.txt
+├── data/
+├── models/
+├── utils/
+├── reports/
+├── assets/
+├── tests/
+└── README.md
+```
+
+---
+
+# 📊 Business Impact
+
+TalentMatch AI helps organizations:
+
+* Reduce manual resume screening time
+* Improve recruiter productivity
+* Identify qualified candidates faster
+* Standardize hiring decisions
+* Detect missing skills automatically
+* Process large applicant pools efficiently
+
+---
+
+# 📸 Screenshots
+
+## Login 
+<img width="1919" height="1004" alt="Screenshot 2026-05-11 144938" src="https://github.com/user-attachments/assets/4af20170-f5e8-4783-b082-2ad825861e66" />
+
+## Dashboard
+
+<img width="1919" height="1005" alt="Screenshot 2026-05-11 145038" src="https://github.com/user-attachments/assets/deb2985e-de11-42e6-87e9-346b2f124c60" />
+
+## Resume Analysis
+
+<img width="1919" height="1009" alt="Screenshot 2026-05-11 145110" src="https://github.com/user-attachments/assets/d87ff213-6444-4094-b682-4a9b59a240e9" />
+
+
+## Candidate Ranking
+
+<img width="1919" height="1018" alt="Screenshot 2026-05-11 145123" src="https://github.com/user-attachments/assets/7e691fbb-24aa-45ee-9702-b79e0e6610b0" />
+
+
+## Personalized Feedback
+
+<img width="1919" height="1012" alt="Screenshot 2026-05-11 145213" src="https://github.com/user-attachments/assets/74fbec67-9437-4462-8800-89ef2c7c0d60" />
+
+
+## Skill Gap Analysis
+
+<img width="1919" height="1009" alt="Screenshot 2026-05-11 145132" src="https://github.com/user-attachments/assets/b7bb8d8e-2e04-4127-99b8-e8ccdfbc152c" />
+
+
+---
+
+# 🚀 Local Installation
+
+## Clone Repository
+
+```bash
+git clone https://github.com/pn-dev-in/TalentMatch-AI.git
+
+cd TalentMatch-AI
+```
+
+## Create Virtual Environment
+
+### Windows
+
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+### Linux / macOS
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+## Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+## Download NLP Resources
+
+```bash
+python -c "import nltk; nltk.download('punkt'); nltk.download('stopwords'); nltk.download('wordnet')"
+```
+
+```bash
+python -m spacy download en_core_web_sm
+```
+
+## Run Application
+
+```bash
+streamlit run app.py
+```
+
+Open:
+
+```text
+http://localhost:8501
+```
+
+---
+
+# 🔑 Demo Credentials
+
+Username:
+
+```text
+recruiter
+```
+
+Password:
+
+```text
+screen2025
+```
+
+---
+
+# 📈 Project Highlights
+
+* Supports semantic AI matching using BERT
+* Uses FAISS for efficient similarity search
+* ATS-style candidate evaluation
+* Automated skill extraction
+* Candidate ranking system
+* Batch resume processing
+* Exportable reports
+* Cloud deployment ready
+
+---
+
+# 🧪 Testing
+
+Run tests:
+
+```bash
+pytest
+```
+
+---
+
+# 🚀 Future Roadmap
+
+* LLM-powered resume analysis
+* AI interview question generation
+* Resume optimization suggestions
+* Recruiter collaboration workspace
+* Multi-language resume support
+* Candidate recommendation engine
+* HR analytics dashboard
+* Applicant tracking system integration
+
+---
+
+# 🎓 Skills Demonstrated
+
+This project demonstrates practical experience in:
+
+✅ Natural Language Processing
+
+✅ Machine Learning
+
+✅ Semantic Search
+
+✅ Information Retrieval
+
+✅ Resume Parsing
+
+✅ Candidate Ranking Systems
+
+✅ Streamlit Application Development
+
+✅ Data Visualization
+
+✅ Vector Databases (FAISS)
+
+✅ AI Product Development
+
+---
+
+# 👨‍💻 Author
+
+### Pravesh Nandanwar
+
+Computer Science & Engineering
+
+GitHub:
+https://github.com/pn-dev-in
+
+LinkedIn:
+(Add LinkedIn Profile)
+
+---
+
+# ⭐ Support
+
+If you found this project useful, consider giving it a star on GitHub.
+
+Feedback, suggestions, and contributions are always welcome.
