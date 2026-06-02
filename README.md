@@ -14,7 +14,7 @@ Designed as a modern hiring assistant, TalentMatch AI combines traditional infor
 
 **Application:**
 
-https://ai-resume-screening-sym.streamlit.app/
+https://talent-matchai.streamlit.app/
 
 ---
 
